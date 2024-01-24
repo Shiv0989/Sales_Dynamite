@@ -8,47 +8,59 @@ Sales_Dynamite is a platform specifically developed to address the complexities 
 ## Repository Structure
 
 Sales_Dynamite/
-│
-├── docs/
-├── models/
-│   ├── forecasting/
-│   │   └── forecasting_model.joblib
-│   ├── predictive/
-│   │   └── regression_model.joblib
-│   ├── cat_id_encoder.joblib
-│   ├── dept_id_encoder.joblib
-│   ├── event_name_encoder.joblib
-│   ├── event_type_encoder.joblib
-│   ├── item_id_encoder.joblib
-│   ├── state_id_encoder.joblib
-│   ├── store_id_encoder.joblib
-│ 
-├── notebooks/
-│   ├── forecasting/
-│   │   └── sharma_shivatmak-14233934-forecasting_phophet.ipynb
-│   └── predictive/
-│       └── sharma_shivatmak-14233934-predicitive_xgboost.ipynb
-├── references/
-├── reports/
-├── src/
-    ├── data/
-    │   ├── data_loader.py
-    │   └── data_loader_f.py
-    ├── features/
-    │   └── data_transformer.py
-        └── data_transformer_f.py
-    ├── models/
-    │   ├── forecasting_model.py
-    │   └── predict_model.py
-├── LICENSE
-├── Makefile
-├── Procfile
-├── main_app.py
-├── requirements.txt
-├── runtime.txt
-├── setup.py
-├── test_environment.py
-└── tox.ini
+
+    ├── docs               
+    │
+    ├── models/            <- Trained and serialized models, model predictions, or model summaries
+    │   ├── forecasting/
+    │   │   └── forecasting_model.joblib
+    │   ├── predictive/
+    │   │   └── regression_model.joblib
+    │   ├── cat_id_encoder.joblib
+    │   ├── dept_id_encoder.joblib
+    │   ├── event_name_encoder.joblib
+    │   ├── event_type_encoder.joblib
+    │   ├── item_id_encoder.joblib
+    │   ├── state_id_encoder.joblib
+    │   ├── store_id_encoder.joblib          
+    │
+    ├── notebooks/           <- Jupyter notebooks. 
+    │   ├── forecasting/
+    │   │   └── sharma_shivatmak-14233934-forecasting_phophet.ipynb
+    │   └── predictive/
+    │       └── sharma_shivatmak-14233934-predicitive_xgboost.ipynb          
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src/               <- source code for use in this project
+    │    ├── data/
+    │    │   ├── data_loader.py
+    │    │   └── data_loader_f.py
+    │    ├── features/
+    │    │   └── data_transformer.py
+    │        └── data_transformer_f.py
+    │    ├── models/
+    │    │   ├── forecasting_model.py
+    │    │   └── predict_model.py
+    │
+    ├── LICENSE
+    ├── Makefile          
+    ├── Procfile
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── main_app.py
+    ├── requirements.txt
+    ├── runtime.txt
+    ├── setup.py
+    ├── test_environment.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 ## Repository Setup:
 
